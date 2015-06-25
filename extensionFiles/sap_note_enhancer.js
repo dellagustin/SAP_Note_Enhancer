@@ -1,3 +1,5 @@
+console.log('Loaded');
+
 $( document ).ready(function() {
 	$('div.urTxtStd > p').each(function(index) {
 		var myElement = $( this );

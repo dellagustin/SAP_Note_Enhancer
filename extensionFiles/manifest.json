@@ -10,6 +10,7 @@
   	  "jquery-2.1.4.min.js",
   	  "prismABAP.js",
   	  "sap_note_enhancer.js"
-	  ]
+	  ],
+    "all_frames": true
   }]
 }
