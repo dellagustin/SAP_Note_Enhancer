@@ -1,0 +1,34 @@
+.ci_insertion {
+  background-color: #CCEBD6;
+}
+
+.ci_deletion {
+  background-color: #FFCCCC;
+}
+
+.ci_block {
+  background-color: #E6E6E6;
+}
+
+.keyword {
+  color: blue
+  }
+
+.comment {
+  color: grey
+}
+
+.string {
+  color: green;
+}
+
+.number {
+  color: darkgreen;
+}
+
+pre {
+  display:inline;
+  font-size: 12px;
+  padding: 0px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}

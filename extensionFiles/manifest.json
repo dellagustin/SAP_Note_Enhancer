@@ -5,7 +5,9 @@
   "manifest_version": 2,
   "content_scripts": [{
     "matches": ["https://*/*/bc/bsp/sno/ui/main.do"],
-    "css": ["prismABAP.css"],
+    "css": [
+      "sap_note_enhancer.css"
+    ],
     "js": [
   	  "jquery-2.1.4.min.js",
   	  "prismABAP.js",
