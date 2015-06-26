@@ -1,18 +1,15 @@
 {
   "name": "SAP Note Enhancer",
   "description": "Adds Correction instruction highlighting to SAP Notes",
-  "version": "0.1",
+  "version": "0.0.1",
   "manifest_version": 2,
   "content_scripts": [{
     "matches": ["https://*/*/bc/bsp/sno/ui/main.do"],
-    "css": [
-      "sap_note_enhancer.css"
-    ],
+    "css": ["prismABAP.css"],
     "js": [
   	  "jquery-2.1.4.min.js",
   	  "prismABAP.js",
   	  "sap_note_enhancer.js"
-	  ],
-    "all_frames": true
+	  ]
   }]
 }
