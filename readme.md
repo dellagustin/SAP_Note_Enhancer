@@ -2,6 +2,8 @@
 
 This is a google chrome extension to enhance the viewing of SAP Notes.
 
+Intall the extension in this [link](https://chrome.google.com/webstore/detail/sap-note-enhancer/keibkcomemkcceddcddjdlncidohgedk).
+
 Current feature(s)
 * Highlighting of ABAP code in Correction Instructions
 
