@@ -15,7 +15,19 @@
     "js": [
   	  "jquery-2.1.4.min.js",
   	  "prismABAP.js",
+      "string_operations.js",
   	  "sap_note_enhancer.js"
 	  ]
+  },
+  {
+    "matches": ["https://*/*/bc/bsp/spn/corr_instr/correction_instructions.*"],
+    "all_frames": true,
+    "css": ["sap_note_enhancer.css"],
+    "js": [
+      "jquery-2.1.4.min.js",
+      "prismABAP.js",
+      "string_operations.js",
+      "sap_ci_overview_enhancer.js"
+    ]
   }]
 }
