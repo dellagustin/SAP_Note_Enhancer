@@ -16,6 +16,7 @@
   	  "jquery-2.1.4.min.js",
   	  "prismABAP.js",
       "string_operations.js",
+      "common_ci_operations.js",
   	  "sap_note_enhancer.js"
 	  ]
   },
@@ -27,6 +28,7 @@
       "jquery-2.1.4.min.js",
       "prismABAP.js",
       "string_operations.js",
+      "common_ci_operations.js",
       "sap_ci_overview_enhancer.js"
     ]
   }]
