@@ -7,23 +7,33 @@
 }
 
 .ci_block {
-  background-color: #E6E6E6;
+  /* background-color: #E6E6E6; */
+  background-color: rgb(230, 238, 240);
 }
 
 .keyword {
-  color: blue
-  }
+  color: blue;
+}
 
 .comment {
-  color: grey
+  /* Standard ABAP Editor Color and style */
+  color: grey;
+  font-style: italic;
 }
 
 .string {
-  color: green;
+  /* Standard ABAP Editor Color */
+  color: rgb(77,166,25);
+}
+
+.ci_insertion .string {
+  /* Strings in insertion blocks need a little more contrast */
+  color: darkgreen;
 }
 
 .number {
-  color: darkgreen;
+  /* Standard ABAP Editor Color */
+  color: rgb(51,153,255);
 }
 
 pre {
