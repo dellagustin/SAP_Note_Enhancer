@@ -15,7 +15,7 @@
   color: blue;
 }
 
-.comment {
+.comment, .eol_comment {
   /* Standard ABAP Editor Color and style */
   color: grey;
   font-style: italic;
@@ -35,6 +35,12 @@
   /* Standard ABAP Editor Color */
   color: rgb(51,153,255);
 }
+
+/*
+.operators {
+  color: purple;
+}
+*/
 
 pre {
   display:inline;
