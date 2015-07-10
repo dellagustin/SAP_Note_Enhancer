@@ -7,40 +7,42 @@
 }
 
 .ci_block {
-  /* background-color: #E6E6E6; */
   background-color: rgb(230, 238, 240);
 }
 
-.keyword {
+.token.keyword {
   color: blue;
 }
 
-.comment, .eol_comment {
-  /* Standard ABAP Editor Color and style */
+.token.comment {
   color: grey;
   font-style: italic;
 }
 
-.string {
-  /* Standard ABAP Editor Color */
+.token.string {
   color: rgb(77,166,25);
 }
 
-.ci_insertion .string {
+.ci_insertion .token.string {
   /* Strings in insertion blocks need a little more contrast */
   color: darkgreen;
 }
 
-.number {
-  /* Standard ABAP Editor Color */
+.token.number {
   color: rgb(51,153,255);
 }
 
-/*
-.operators {
+.token.operator {
   color: purple;
 }
-*/
+
+.token.punctuation {
+  color: purple;
+}
+
+.token.token_operator {
+  color: rgb(128,128,128);
+}
 
 pre {
   display:inline;
