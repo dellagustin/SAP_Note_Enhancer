@@ -1,0 +1,65 @@
+<!-- Simulates https://*/*/bc/bsp/spn/corr_instr/correction_instructions.htm -->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../extensionFiles/sap_note_enhancer.css">
+  </head>
+  <body>
+    <script src="../extensionFiles/jquery-2.1.4.min.js"></script>
+    <script src="../extensionFiles/prismABAP.js" data-manual></script>
+	  <script src="../extensionFiles/string_operations.js"></script>
+    <script src="../extensionFiles/common_ci_operations.js"></script>
+    <script src="../extensionFiles/sap_ci_overview_enhancer.js"></script>
+    <pre>
+  *$*$----------------------------------------------------------------$*$*
+  *$ Correction Inst.         0000000000 0000000000                     $*
+  *$ Req. Corr. Instructions  0000000000 0000000000 Note 0000000000     $*
+  *$                          0000000000 0000000000 Note 0000000000     $*
+  *$--------------------------------------------------------------------$*
+  *$ Valid for       :                                                  $*
+  *$ Software Component   XXXXXX                                        $*
+  *$  Release 000          SAPK-XXXXXXXXXXXXXXX - SAPK-XXXXXXXXXXXXXXX  $*
+  *$*$----------------------------------------------------------------$*$*
+  *&amp;--------------------------------------------------------------------*
+  *&amp; Object          CINC CL_DEMO_CLASS=================CCDEF
+  *&amp; Object Header   CLAS CL_DEMO_CLASS
+  *&amp;--------------------------------------------------------------------*
+  ...
+  &quot; The context
+
+  *&gt;&gt;&gt;&gt; START OF DELETION &lt;&lt;&lt;&lt;&lt;
+  &quot; Some keywords
+  DATA abcdef TYPE c.
+  DATA lv_a TYPE i.
+  DATA lv_b TYPE string.
+
+  &quot; Numbers and operators
+  lv_a = ( 0010 + 2 ) - 3 * 4 / 5 ** 6.
+
+  IF lv_a &lt; 1 OR
+     lv_a = 2 OR
+     lv_a &gt; 3 OR
+     lv_a &lt;&gt; 4 OR
+     lv_a &lt;= 5 OR
+     lv_a &gt;= 6.
+  ENDIF.
+
+  &quot; String concatenation
+  lv_b = 'String' &amp;&amp; 'string'.
+
+  &quot; String template
+  lv_b = |String template { lv_a }, yes|.
+
+  *&gt;&gt;&gt;&gt; END OF DELETION &lt;&lt;&lt;&lt;&lt;&lt;&lt;
+  *&gt;&gt;&gt;&gt; START OF INSERTION &lt;&lt;&lt;&lt;
+
+  &quot; Structures and classes
+  ls_struct-component = 1.
+  lo_instance-&gt;if_interface~method( ).
+  cl_class=&gt;static_method( ).
+
+  *&gt;&gt;&gt;&gt; END OF INSERTION &lt;&lt;&lt;&lt;&lt;&lt;
+  ...
+  *&amp;--------------------------------------------------------------------*
+          </pre>
+  </body>
+</html>
