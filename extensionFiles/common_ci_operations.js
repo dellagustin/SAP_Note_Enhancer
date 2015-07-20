@@ -26,5 +26,16 @@ function commonCIPostProcessing(myElement) {
     '<b>*&gt;&gt;&gt;&gt; END OF INSERTION &lt;&lt;&lt;&lt;&lt;&lt;</b></span></div>'
   );
 
+  // Add links to Notes in ci header
+  newHtmlForElement = newHtmlForElement.replace(/\*\$\s.*\$\*/g, function(headerLine) {
+    return headerLine.replace(/(Note|Hinweis)\s\d{10}/, function(sapNote) {
+      return sapNote.replace(/\d{10}/, function(sapNoteNumber) {
+        sapNoteNumber =
+          '<a href="/sap/support/notes/' + sapNoteNumber +'">' + sapNoteNumber + '</a>';
+        return sapNoteNumber;
+      });
+    });
+  });
+
   myElement.html(newHtmlForElement);
 }
