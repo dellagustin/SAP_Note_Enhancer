@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SAP Note Enhancer
 // @namespace    https://github.com/dellagustin/SAP_Note_Enhancer
-// @version      1.0.0
+// @version      1.1.0
 // @description  Highlights correction instruction code from SAP Notes showed in the New Note Framework
 // @author       Guilherme Dellagustin (i827833)
 // @downloadURL  https://raw.githubusercontent.com/dellagustin/SAP_Note_Enhancer/firefox_gm_user_script/greasemonkey/sap_note_enhancer.user.js
