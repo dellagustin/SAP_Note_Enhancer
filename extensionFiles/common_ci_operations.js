@@ -1,3 +1,9 @@
+function replaceNoteInCIHeaderLine(headerLine, replaceCallback) {
+  return headerLine.replace(/(Note|Hinweis)\s\d{10}/, function(sapNote) {
+    return sapNote.replace(/\d{10}/, replaceCallback);
+  });
+}
+
 function commonCIPostProcessing(myElement) {
 	var newHtmlForElement = myElement.html();
 
@@ -28,12 +34,10 @@ function commonCIPostProcessing(myElement) {
 
 	// Add links to Notes in ci header
 	newHtmlForElement = newHtmlForElement.replace(/\*\$\s.*\$\*/g, function(headerLine) {
-		return headerLine.replace(/(Note|Hinweis)\s\d{10}/, function(sapNote) {
-			return sapNote.replace(/\d{10}/, function(sapNoteNumber) {
-				sapNoteNumber =
-					'<a href="/sap/support/notes/' + sapNoteNumber +'">' + sapNoteNumber + '</a>';
-				return sapNoteNumber;
-			});
+		return replaceNoteInCIHeaderLine(headerLine, function(sapNoteNumber) {
+			sapNoteNumber =
+				'<a href="/sap/support/notes/' + sapNoteNumber +'">' + sapNoteNumber + '</a>';
+			return sapNoteNumber;
 		});
 	});
 
