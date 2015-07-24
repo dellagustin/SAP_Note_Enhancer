@@ -20,7 +20,11 @@
 }
 
 .token.string {
-	color: rgb(77,166,25);
+	/* The standard editor color (commented below) does not look good in
+	contrast to the background of the insertion and deletion blocks.
+	We are adopting the darkgreen as default. */
+	/* color: rgb(77,166,25); */
+	color: darkgreen;
 }
 
 .ci_insertion .token.string {
