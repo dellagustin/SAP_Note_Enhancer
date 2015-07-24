@@ -1,47 +1,47 @@
 {
-  "name": "SAP Note Enhancer",
-  "short_name": "SAPNote Enh.",
-  "description": "Adds Correction instruction highlighting to SAP Notes",
-  "homepage_url": "https://github.com/dellagustin/SAP_Note_Enhancer",
-  "icons": {
-    "128": "./image/icon128.png"
-  },
-  "version": "1.8.0",
-  "manifest_version": 2,
-  "content_scripts": [{
-    "matches": ["https://*/*/bc/bsp/sno/ui/main.do"],
-    "all_frames": true,
-    "css": ["sap_note_enhancer.css"],
-    "js": [
-  	  "jquery-2.1.4.min.js",
-  	  "prismABAP.js",
-      "string_operations.js",
-      "common_ci_operations.js",
-  	  "sap_note_enhancer.js"
-	  ]
-  },
-  {
-    "matches": ["https://*/*/bc/bsp/spn/corr_instr/correction_instructions.*"],
-    "all_frames": true,
-    "css": ["sap_note_enhancer.css"],
-    "js": [
-      "jquery-2.1.4.min.js",
-      "prismABAP.js",
-      "string_operations.js",
-      "common_ci_operations.js",
-      "sap_ci_overview_enhancer.js"
-    ]
-  },
-  {
-    "matches": ["https://*/*/bc/bsp/spn/corr_instr/correction_detail.*"],
-    "all_frames": true,
-    "css": ["sap_note_enhancer.css"],
-    "js": [
-      "jquery-2.1.4.min.js",
-      "prismABAP.js",
-      "string_operations.js",
-      "sap_ci_detail_enhancer.js"
-    ]
-  }
-  ]
+	"name": "SAP Note Enhancer",
+	"short_name": "SAPNote Enh.",
+	"description": "Adds Correction instruction highlighting to SAP Notes",
+	"homepage_url": "https://github.com/dellagustin/SAP_Note_Enhancer",
+	"icons": {
+		"128": "./image/icon128.png"
+	},
+	"version": "1.8.0",
+	"manifest_version": 2,
+	"content_scripts": [{
+		"matches": ["https://*/*/bc/bsp/sno/ui/main.do"],
+		"all_frames": true,
+		"css": ["sap_note_enhancer.css"],
+		"js": [
+			"jquery-2.1.4.min.js",
+			"prismABAP.js",
+			"string_operations.js",
+			"common_ci_operations.js",
+			"sap_note_enhancer.js"
+		]
+	},
+	{
+		"matches": ["https://*/*/bc/bsp/spn/corr_instr/correction_instructions.*"],
+		"all_frames": true,
+		"css": ["sap_note_enhancer.css"],
+		"js": [
+			"jquery-2.1.4.min.js",
+			"prismABAP.js",
+			"string_operations.js",
+			"common_ci_operations.js",
+			"sap_ci_overview_enhancer.js"
+		]
+	},
+	{
+		"matches": ["https://*/*/bc/bsp/spn/corr_instr/correction_detail.*"],
+		"all_frames": true,
+		"css": ["sap_note_enhancer.css"],
+		"js": [
+			"jquery-2.1.4.min.js",
+			"prismABAP.js",
+			"string_operations.js",
+			"sap_ci_detail_enhancer.js"
+		]
+	}
+	]
 }

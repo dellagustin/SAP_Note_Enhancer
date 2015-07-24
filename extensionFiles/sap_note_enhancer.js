@@ -20,7 +20,7 @@ function getPakID() {
 	$('a').each(function(){
 		var linkElement = $(this);
 
-		if(linkElement.attr('href')) { 
+		if(linkElement.attr('href')) {
 			var pakIdParam = linkElement.attr('href').match(/(_CPAKID|pv_pakid)=\d*/i);
 
 			pakIdParam && pakIdParam[0] && (pakID = pakIdParam[0].match(/\d+/)[0]);
@@ -44,8 +44,8 @@ $( document ).ready(function() {
 		newHtmlForElement = '<div class="ci_block"><pre class="language-abap"><code>' + newHtmlForElement + '</code></pre><div>';
 
 		// Prevents Highlighting of non ABAP comments
-    newHtmlForElement = replaceAll(newHtmlForElement,	'*\n&gt;&gt;&gt;',	'*\n</code><code class="language-none">&gt;&gt;&gt;');
-		newHtmlForElement = replaceAll(newHtmlForElement,	'&lt;&lt;&lt;\n\n*&amp;',	'&lt;&lt;&lt;</code><code class="language-abap">\n\n*&amp;');
+		newHtmlForElement = replaceAll(newHtmlForElement,	'*\n&gt;&gt;&gt;', '*\n</code><code class="language-none">&gt;&gt;&gt;');
+		newHtmlForElement = replaceAll(newHtmlForElement,	'&lt;&lt;&lt;\n\n*&amp;', '&lt;&lt;&lt;</code><code class="language-abap">\n\n*&amp;');
 
 		myElement.html(newHtmlForElement);
 	});

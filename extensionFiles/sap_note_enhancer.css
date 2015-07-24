@@ -1,52 +1,52 @@
 .ci_insertion {
-  background-color: #CCEBD6;
+	background-color: #CCEBD6;
 }
 
 .ci_deletion {
-  background-color: #FFCCCC;
+	background-color: #FFCCCC;
 }
 
 .ci_block {
-  background-color: rgb(230, 238, 240);
+	background-color: rgb(230, 238, 240);
 }
 
 .token.keyword {
-  color: blue;
+	color: blue;
 }
 
 .token.comment {
-  color: grey;
-  font-style: italic;
+	color: grey;
+	font-style: italic;
 }
 
 .token.string {
-  color: rgb(77,166,25);
+	color: rgb(77,166,25);
 }
 
 .ci_insertion .token.string {
-  /* Strings in insertion blocks need a little more contrast */
-  color: darkgreen;
+	/* Strings in insertion blocks need a little more contrast */
+	color: darkgreen;
 }
 
 .token.number {
-  color: rgb(51,153,255);
+	color: rgb(51,153,255);
 }
 
 .token.operator {
-  color: purple;
+	color: purple;
 }
 
 .token.punctuation {
-  color: purple;
+	color: purple;
 }
 
 .token.token_operator {
-  color: rgb(128,128,128);
+	color: rgb(128,128,128);
 }
 
 pre {
-  display:inline;
-  font-size: 12px;
-  padding: 0px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+	display:inline;
+	font-size: 12px;
+	padding: 0px;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
