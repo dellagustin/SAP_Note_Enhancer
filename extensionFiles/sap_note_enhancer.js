@@ -20,12 +20,14 @@ function getPakID() {
 	$('a').each(function(){
 		var linkElement = $(this);
 
-		var pakIdParam = linkElement.attr('href').match(/(_CPAKID|pv_pakid)=\d*/i);
+		if(linkElement.attr('href')) { 
+			var pakIdParam = linkElement.attr('href').match(/(_CPAKID|pv_pakid)=\d*/i);
 
-		pakIdParam[0] && (pakID = pakIdParam[0].match(/\d+/)[0]);
+			pakIdParam && pakIdParam[0] && (pakID = pakIdParam[0].match(/\d+/)[0]);
 
-		if(pakID !== '') {
-			return false;
+			if(pakID !== '') {
+				return false;
+			}
 		}
 	});
 
