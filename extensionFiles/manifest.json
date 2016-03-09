@@ -42,6 +42,18 @@
 			"string_operations.js",
 			"sap_ci_detail_enhancer.js"
 		]
+	},
+	{
+		"matches": ["https://launchpad.support.sap.com/*"],
+		"all_frames": true,
+		"css": ["sap_note_enhancer.css"],
+		"js": [
+			"jquery-2.1.4.min.js",
+			"prismABAP.js",
+			"string_operations.js",
+			"common_ci_operations.js",
+			"sap_ci_launchpad_enhancer.js"
+		]
 	}
 	]
 }
