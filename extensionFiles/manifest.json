@@ -9,7 +9,10 @@
 	"version": "1.10.0",
 	"manifest_version": 2,
 	"content_scripts": [{
-		"matches": ["https://*/*/bc/bsp/sno/ui/main.do"],
+		"matches": [
+			"https://*.sap.corp/*/bc/bsp/sno/ui/main.do",
+			"https://*.sap-ag.de/*/bc/bsp/sno/ui/main.do"
+		],
 		"all_frames": true,
 		"css": ["sap_note_enhancer.css"],
 		"js": [
@@ -21,7 +24,10 @@
 		]
 	},
 	{
-		"matches": ["https://*/*/bc/bsp/spn/corr_instr/correction_instructions.*"],
+		"matches": [
+			"https://*.sap.corp/*/bc/bsp/spn/corr_instr/correction_instructions.*",
+			"https://*.sap-ag.de/*/bc/bsp/spn/corr_instr/correction_instructions.*"
+		],
 		"all_frames": true,
 		"css": ["sap_note_enhancer.css"],
 		"js": [
@@ -33,7 +39,10 @@
 		]
 	},
 	{
-		"matches": ["https://*/*/bc/bsp/spn/corr_instr/correction_detail.*"],
+		"matches": [
+			"https://*.sap.corp/*/bc/bsp/spn/corr_instr/correction_detail.*",
+			"https://*.sap-ag.de/*/bc/bsp/spn/corr_instr/correction_detail.*"
+		],
 		"all_frames": true,
 		"css": ["sap_note_enhancer.css"],
 		"js": [
