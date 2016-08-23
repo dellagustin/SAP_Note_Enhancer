@@ -1,10 +1,10 @@
 $( document ).on('DOMNodeInserted', 'pre', function(eventObject) {
 	var thisElement = $(this);
 
-	if(!thisElement.hasClass('language-abap')) {
+	if(!thisElement.hasClass('code-highlighted')) {
 		changingPres = true;
 
-		thisElement.addClass('language-abap');
+		thisElement.addClass('code-highlighted');
 
 		var newHtmlForElement = thisElement.html();
 		newHtmlForElement = replaceAll(newHtmlForElement,	'<br>',	'\n');
