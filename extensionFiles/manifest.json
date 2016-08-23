@@ -6,7 +6,7 @@
 	"icons": {
 		"128": "./image/icon128.png"
 	},
-	"version": "1.10.1",
+	"version": "1.10.2",
 	"manifest_version": 2,
 	"content_scripts": [{
 		"matches": [
