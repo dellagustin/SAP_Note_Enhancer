@@ -15,3 +15,9 @@ This projects reuses:
   * https://github.com/LeaVerou/prism
   * http://prismjs.com/
 * ABAPSyntaxHighlighter - https://github.com/rmtiwari/ABAPSyntaxHighlighter
+
+# Privacy Policy
+
+SAP Note Enhancer does not collect nor store any user data nor anonymous usage data.
+
+When you install SAP Note Enhancer, you do so using the Chrome Web Store, which has its own privacy policy: https://policies.google.com/privacy
