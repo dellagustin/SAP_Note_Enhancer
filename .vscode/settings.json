@@ -1,0 +1,10 @@
+{
+    "[json]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false
+    },
+    "[javascript]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false
+    }
+}
