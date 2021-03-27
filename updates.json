@@ -2,7 +2,10 @@
 	"addons": {
 		"{6fffd84b-a0b1-40e5-ac1e-97817e4c8f68}": {
 			"updates": [
-		
+				{
+					"version": "1.10.5",
+					"update_link": "https://github.com/dellagustin/SAP_Note_Enhancer/releases/download/v1.10.5/sap_note_enhancer-1.10.5-an+fx.xpi"
+				}
 			]
 		}
 	}
