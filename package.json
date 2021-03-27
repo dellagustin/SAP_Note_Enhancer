@@ -1,0 +1,23 @@
+{
+	"name": "sap_note_enhancer",
+	"version": "1.10.5",
+	"description": "This is a google chrome extension to enhance the viewing of SAP Notes.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start:firefox": "web-ext run --source-dir ./extensionFiles/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dellagustin/SAP_Note_Enhancer.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dellagustin/SAP_Note_Enhancer/issues"
+	},
+	"homepage": "https://github.com/dellagustin/SAP_Note_Enhancer#readme",
+	"devDependencies": {
+		"web-ext": "^6.0.0"
+	}
+}

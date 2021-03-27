@@ -6,7 +6,7 @@
 	"icons": {
 		"128": "./image/icon128.png"
 	},
-	"version": "1.10.3",
+	"version": "1.10.5",
 	"manifest_version": 2,
 	"content_scripts": [{
 		"matches": [
@@ -64,5 +64,11 @@
 			"sap_ci_launchpad_enhancer.js"
 		]
 	}
-	]
+	],
+	"browser_specific_settings ": {
+		"gecko": {
+			"id": "{6fffd84b-a0b1-40e5-ac1e-97817e4c8f68}",
+			"update_url": "https://raw.githubusercontent.com/dellagustin/SAP_Note_Enhancer/updates-manifest/updates.json"
+		}
+	}
 }
