@@ -1,0 +1,6 @@
+{
+    "[json]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false
+    }
+}
