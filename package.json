@@ -1,6 +1,6 @@
 {
 	"name": "sap_note_enhancer",
-	"version": "1.11.0",
+	"version": "1.12.0",
 	"description": "This is a google chrome extension to enhance the viewing of SAP Notes.",
 	"main": "index.js",
 	"scripts": {
