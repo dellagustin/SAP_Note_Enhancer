@@ -1,5 +1,13 @@
-$( document ).on('DOMNodeInserted', 'pre', function(eventObject) {
-	var thisElement = $(this);
+const observer = new MutationObserver(mutationList =>  
+	mutationList.filter(m => m.type === 'childList').forEach(m => {
+		Array.from(m.addedNodes).filter((node) => node.nodeType === Node.ELEMENT_NODE && node.nodeName === 'PRE').forEach(mutationHandlerHighlightABAPCodeInPreTags);  
+	})
+);  
+
+observer.observe(document,{childList: true, subtree: true});  
+
+function mutationHandlerHighlightABAPCodeInPreTags(node) {
+	var thisElement = $(node);
 
 	if(!thisElement.hasClass('code-highlighted')) {
 		changingPres = true;
@@ -20,4 +28,4 @@ $( document ).on('DOMNodeInserted', 'pre', function(eventObject) {
 			return '/#/notes/' + noteNumber;
 		});
 	}
-});
+}
