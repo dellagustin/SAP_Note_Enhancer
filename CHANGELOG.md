@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+
+- Added support for highlighting code in me.sap.com ([#28](https://github.com/dellagustin/SAP_Note_Enhancer/issues/28))
+
 ## 1.11.0 - 2024-04-23
 
 ### Changed

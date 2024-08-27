@@ -53,7 +53,10 @@
 		]
 	},
 	{
-		"matches": ["https://launchpad.support.sap.com/*"],
+		"matches": [
+			"https://launchpad.support.sap.com/*",
+			"https://me.sap.com/*"
+		],
 		"all_frames": true,
 		"css": ["sap_note_enhancer.css"],
 		"js": [
