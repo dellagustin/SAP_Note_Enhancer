@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.12.1 - 2026-02-27
+
+### Fixed
+
+- Added support for internal SAP domain `*.net.sap` (Issue [#29])
+
 ## 1.12.0 - 2024-08-27
 
-### Changed
+### Added
 
 - Added support for highlighting code in me.sap.com ([#28](https://github.com/dellagustin/SAP_Note_Enhancer/issues/28))
 
