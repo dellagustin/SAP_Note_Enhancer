@@ -11,7 +11,8 @@
 	"content_scripts": [{
 		"matches": [
 			"https://*.sap.corp/*/bc/bsp/sno/ui/main.do",
-			"https://*.sap-ag.de/*/bc/bsp/sno/ui/main.do"
+			"https://*.sap-ag.de/*/bc/bsp/sno/ui/main.do",
+			"https://*.net.sap/*/bc/bsp/sno/ui/main.do"
 		],
 		"all_frames": true,
 		"css": ["sap_note_enhancer.css"],
@@ -26,7 +27,8 @@
 	{
 		"matches": [
 			"https://*.sap.corp/*/bc/bsp/spn/corr_instr/correction_instructions.*",
-			"https://*.sap-ag.de/*/bc/bsp/spn/corr_instr/correction_instructions.*"
+			"https://*.sap-ag.de/*/bc/bsp/spn/corr_instr/correction_instructions.*",
+			"https://*.net.sap/*/bc/bsp/spn/corr_instr/correction_instructions.*"
 		],
 		"all_frames": true,
 		"css": ["sap_note_enhancer.css"],
@@ -41,7 +43,8 @@
 	{
 		"matches": [
 			"https://*.sap.corp/*/bc/bsp/spn/corr_instr/correction_detail.*",
-			"https://*.sap-ag.de/*/bc/bsp/spn/corr_instr/correction_detail.*"
+			"https://*.sap-ag.de/*/bc/bsp/spn/corr_instr/correction_detail.*",
+			"https://*.net.sap/*/bc/bsp/spn/corr_instr/correction_detail.*"
 		],
 		"all_frames": true,
 		"css": ["sap_note_enhancer.css"],
