@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Added support for internal SAP domain `*.net.sap` (Issue [#29])
+- Fixed error in uploading package to the Chrome Web Store Developmer Dashboard (refer to comment on Issue [#29])
+
+[#29]: https://github.com/dellagustin/SAP_Note_Enhancer/issues/29
 
 ## 1.12.0 - 2024-08-27
 
